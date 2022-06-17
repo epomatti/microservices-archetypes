@@ -8,8 +8,6 @@ This guide does not affiliate itself to any particular technology or microservic
 
 Software engineers have been creating service isolation and independent scalability for decades without container orchestration. The advent and accessibility of container orchestrators, such as Service Fabric, Docker Swarm, Kubernetes, and others, made as such that this technique can be implemented to everyone, but it's implementation is not mandatory (or, is it? 🤔)
 
-Anyways, let's talk about archetypes.
-
 ## Archetypes
 
 ### Service-specific Scalability
