@@ -8,7 +8,7 @@ This project documents the different types of microservices archetypes and scena
 
   There's always trade-offs and situations that are particular to some projects.
 
-  Although the concept of what constitutes a "microservice" is, for the most part, intuitively understood, it's definition and implementation are not as much.
+  Although the concept of what constitutes a "microservice" is, for the most part, intuitively understood, it's definition and implementation are not 100% agreed upon.
 
   Software engineers have been creating service isolation and independent scalability for decades without container orchestration. The advent and accessibility of container orchestrators, such as Service Fabric, Docker Swarm, Kubernetes, and others, allowed this technique to be available to everyone, but its implementation is not mandatory. (Or is it? 🤔)
 </details>
