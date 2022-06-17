@@ -68,7 +68,7 @@ Some requirements cannot be met with code dependencies and might need to be expo
 
 This generates problems of its own, but again for whatever reason a team might opt to build such a service.
 
-Let's suppose that using [Azure App Configuration](https://azure.microsoft.com/en-us/services/app-configuration/) is not approved, and using an orchestrator config and secrets layer is not flexible enough, a team might choose to develop its own configuration manager layer.
+Let's suppose that using [Azure App Configuration](https://azure.microsoft.com/en-us/services/app-configuration/) is not approved, and using an orchestrator config and secrets layer is not flexible enough, a team might choose to develop its own configuration management layer.
 
 ![Language][8]
 
