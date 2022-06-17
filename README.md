@@ -83,10 +83,11 @@ The hard part if figuring out your system, or you company, definition of domain,
 
 ### 7 - Team Segregation
 
-Different teams may own specific microservices.
-- Cost distribution and/or internal service divisions
-- Code management
-- 3rd party development
+Larger teams will often have different teams owning specific services.
+
+- Team cost center distribution or internal company composition can influence such structures
+- Code management and productivity can become a factor in this decision
+- You might have to onboard another 3rd party development team and you want an isolation from your own services
 
 This can possibly lead to a multi-language microservices architecture.
 
