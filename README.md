@@ -4,9 +4,7 @@ This project documents the different types of microservices archetypes and scena
 
 <details>
   <summary>📓 Note</summary>
-  This guide does not affiliate itself to a technology or microservices definition and does not (or at very minimum tries not to) advocate XYZ techniques as good or bad.
-
-  There's always trade-offs and situations that are particular to some projects.
+  This guide does not affiliate itself to a technology or microservices definition and does not (or at very minimum tries not to) advocate XYZ techniques as good or bad. There's always trade-offs and situations that are particular to some projects.
 
   Although the concept of what constitutes a "microservice" is, for the most part, intuitively understood, it's definition and implementation are not 100% agreed upon.
 
