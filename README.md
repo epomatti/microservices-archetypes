@@ -2,15 +2,18 @@
 
 This project documents the different types of microservices archetypes and scenarios that I observed over the years in which they're most commonly applicable. Multiple archetypes may apply simultaneously to a particular system.
 
-### 📓 Quick note
+<details>
+  <summary>📓 Note</summary>
+  This guide does not affiliate itself to any particular technology or microservices definition, and also does not (or at very minimum tries not to) advocate XYZ techniques as good or bad.
 
-This guide does not affiliate itself to any particular technology or microservices definition, and also does not (or at very minimum tries not to) advocate XYZ techniques as good or bad.
+  There's always trade offs and situations that are particular to some projects.
 
-There's always trade offs and situations that are particular to some projects.
+  Although the concept of what constitutes a "microservice" is more or less intuitively understood, it's definition and implementation still are a topic of discussion.
 
-Although the concept of what constitutes a "microservice" is more or less intuitively understood, it's definition and implementation still are a topic of discussion.
+  Software engineers have been creating service isolation and independent scalability for decades without container orchestration. The advent and accessibility of container orchestrators, such as Service Fabric, Docker Swarm, Kubernetes, and others, allowed this technique to be available to everyone, but it's implementation is not mandatory. (Or is it? 🤔)
+</details>
 
-Software engineers have been creating service isolation and independent scalability for decades without container orchestration. The advent and accessibility of container orchestrators, such as Service Fabric, Docker Swarm, Kubernetes, and others, allowed this technique to be available to everyone, but it's implementation is not mandatory. (Or is it? 🤔)
+
 
 ## Archetypes
 
