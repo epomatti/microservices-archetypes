@@ -23,6 +23,8 @@ When a particular service has unique capacity or operational requirements, engin
 - **Performance** - When resource consumption requirements are high nature in (operations require high memory, CPU, throughput, etc).
 - **Volume** - The service receives a distinctively high number of transactions or tasks to be completed, either constantly or during peak events.
 
+A system might have only a few critical services and can consider this approach. There's nothing inherently wrong with a hybrid architecture and you don't need an orchestrator to meet this requirement.
+
 ![Service-specific][1]
 
 ### 2 - General Scalability
@@ -30,6 +32,8 @@ When a particular service has unique capacity or operational requirements, engin
 Typically, all components are or should be designed to scale in a system, with specific scalability configuration being applied to individual services.
 
 This is a constant activity guided by observation and testing via APM techniques and maintained as the system evolves across development cycles.
+
+This is the most standard microservices architecture.
 
 ![General][2]
 
