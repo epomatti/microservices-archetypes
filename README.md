@@ -23,7 +23,7 @@ When a particular service has unique capacity or operational requirements, engin
 - **Performance** - When resource consumption requirements are high nature in (operations require high memory, CPU, throughput, etc).
 - **Volume** - The service receives a distinctively high number of transactions or tasks to be completed, either constantly or during peak events.
 
-A system might have only a few critical services and can consider this approach. There's nothing inherently wrong with a hybrid architecture and you don't need an orchestrator to meet this requirement.
+A system might have only a few critical services and can consider this approach. There's nothing inherently wrong with a hybrid architecture and you don't necessarily need an orchestrator to meet this requirement.
 
 ![Service-specific][1]
 
