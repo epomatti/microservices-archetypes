@@ -25,7 +25,7 @@ When a particular service has unique capacity or operational requirements, engin
 - **Performance** - When resource consumption requirements re high nature in (operations require high memory, CPU, throughput, etc).
 - **Volume** - The service receives a distinctively high number of transactions or tasks to be completed, either constantly or during peak events.
 
-![Load oriented Microservices][1]
+![Service-specific][1]
 
 ### 2 - General Scalability
 
@@ -33,7 +33,7 @@ Typically, all components are or should be designed to scale in a system, with s
 
 This is a constant activity guided by observation and testing via APM techniques and maintained as the system evolves across development cycles.
 
-![Elastic][2]
+![General][2]
 
 Large systems will scale this model to the extreme across multiple products and clusters to reach customers globally, often arriving in unique architectures with multiple layers of dependencies and abstractions, although that would not classify as "micro" services architecture by most definitions.
 
@@ -48,14 +48,14 @@ When there is a technical requirement that forces a service to be created using 
 
 You may have your LoB applications with a standard template, and eventually require some of them to be built in different technologies.
 
-![Elastic][6]
+![Technology Requirement][6]
 
 
 ### 4 - Multi-language
 
 A company or team may implement multiple languages. That might happen by design or by outer forces, such as a particular demand for professionals.
 
-![Language][7]
+![Multi-Language][7]
 
 Architectures _can_ use different languages for their microservices, but that will come with a cost.
 
@@ -70,7 +70,7 @@ This generates problems of its own, but again for whatever reason a team might o
 
 Let's suppose that using [Azure App Configuration](https://azure.microsoft.com/en-us/services/app-configuration/) is not approved, and using an orchestrator config and secrets layer is not flexible enough, a team might choose to develop its own configuration management layer.
 
-![Language][8]
+![Technical Microservices][8]
 
 ### 6 - Domain
 
@@ -79,7 +79,7 @@ Frequently you'll want to divide your services into functional domains. That's w
 The hard part if figuring out your system, or you company, definition of domain, and then implementing it into the applications and operations.
 
 
-![Elastic][3]
+![Domains][3]
 
 This approach can inadvertently lead to [nanoservices](#nanoservices).
 
@@ -92,13 +92,13 @@ Different teams may own specific microservices.
 
 This can possibly lead to a multi-language microservices architecture.
 
-![Elatic][4]
+![Team Segregation][4]
 
 ### 8 - Migration
 
-Gradual migration from a legacy application to a microservices architecture might be implemented, where new services are created in isolation, while existing services can be gradually migrated to the new platform.
+Gradual migration from legacy applications (or monoliths) to a microservices architecture might be implemented, where new services are created in isolation, while existing services can be gradually migrated to the new platform.
 
-![Elatic][5]
+![Migration][5]
 
 ### 9 - Nanoservices
 
@@ -108,15 +108,15 @@ During the startup period a lot of "MVPs" were developed in such a way. Is the c
 
 In one project that I consulted for, the architecture was almost a single function in each pod.
 
-![Elatic][9]
+![Nanoservices][9]
 
-### 10 - Extra: "One App" Microservice
+### 10 - Extra: Micro-monolith
 
-This is simply a single application deployed to any platform or container which is mistakenly called "microservice" but has none of the scalability and boundaries that one would expect. It's just an app.
+This is simply a single application which is mistakenly called "microservice" but has none of the scalability and boundaries that one would expect. It's just an app, and it may even be running in an orchestrator.
 
-The first time a heard it was for a Java Spring application. Since they were different from Java EE in which you can port everything in a single file, that probably started the whole thing.
+The first time a heard it was for a Java Spring application. Since they were different from Java EE in which you can package and execute everything in a single WAR, that probably started the whole thing.
 
-![Elatic][10]
+![Micro-monolith][10]
 
 
 
