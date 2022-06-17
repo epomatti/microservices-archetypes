@@ -12,7 +12,7 @@ Software engineers have been creating service isolation and independent scalabil
 
 ### Service-specific Scalability
 
-When a particular service has unique capacity or operational requirements, engineers might choose to implement service isolation. Such decision can be drive by multiple reasons:
+When a particular service has unique capacity or operational requirements, engineers might choose to implement service isolation. Such decision can be driven by multiple reasons:
 
 - **Business criticality** - Business operation or reputation is highly sensitive to the operation of such service. This could be a main service that a direct dependency for the purchase of services and goods by customers, or even compliance related, where govern or institutions may fine the company if the operation doesn't meet contract targets.
 - **Performance** - When resource consumption requirements re high nature in (operations require high memory, cpu, throughput, etc).
