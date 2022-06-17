@@ -1,12 +1,16 @@
 # Microservices Archetypes
 
-This project documents the different types of microservices archetypes and the difference scenarios in which they're most commonly applicable. Multiple archetypes may apply simultaneously to a particular system.
+This project documents the different types of microservices archetypes and scenarios that I observed over the years in which they're most commonly applicable. Multiple archetypes may apply simultaneously to a particular system.
 
-### Quick intro
+### 📓 Quick note
 
-This guide does not affiliate itself to any particular technology or microservices definition. Although the concept what comprises a "microservice" is more or less intuitively understood, it's definition and implementation it's still in the realm of discussion.
+This guide does not affiliate itself to any particular technology or microservices definition, and also does not (or at very minimum tries not to) advocate XYZ techniques as good or bad.
 
-Software engineers have been creating service isolation and independent scalability for decades without container orchestration. The advent and accessibility of container orchestrators, such as Service Fabric, Docker Swarm, Kubernetes, and others, made as such that this technique can be implemented to everyone, but it's implementation is not mandatory (or, is it? 🤔)
+There's always trade offs and situations that are particular to some projects.
+
+Although the concept of what constitutes a "microservice" is more or less intuitively understood, it's definition and implementation still are a topic of discussion.
+
+Software engineers have been creating service isolation and independent scalability for decades without container orchestration. The advent and accessibility of container orchestrators, such as Service Fabric, Docker Swarm, Kubernetes, and others, allowed this technique to be available to everyone, but it's implementation is not mandatory. (Or is it? 🤔)
 
 ## Archetypes
 
@@ -48,16 +52,23 @@ You may have you LoB services with a standard template, and eventually require s
 
 A company or team may implement multiple languages. That might happen by design or by outer forces, such as a particular demand for professionals.
 
+![Language][7]
+
 Architectures _can_ use use multiple languages for difference microservices, but that will come with a cost.
 
-Often microservices will evolve and generate complex core libraries and CI/CD templates that would require significant effort for migration. Teams should consider this approach carefully.
-
-![Language][7]
+Often microservices will evolve and generate complex core libraries and CI/CD templates that would require significant effort for migration. Teams should consider this approach carefully. This could inevitably lead to [technical microservices](#technical-microservices).
 
 
 ### Technical Microservices
 
-asdfsadf
+Some requirements cannot be met with code dependencies and might need to be exported to their very own microservice for technical reasons.
+
+This generate problems of it's own, but again for whatever reason a team might opt to build such a service.
+
+Let's suppose that using [Azure App Configuration](https://azure.microsoft.com/en-us/services/app-configuration/) is not approved, and using an orchestrator config and secrets layer is not flexible enough, a team might choose to develop it's own configuration manager layer.
+
+![Language][8]
+
 ### Domain
 
 This approach commonly is implicit to , but it is not always the case. You may which to (depending on what definition of "domain" is being used)
@@ -67,27 +78,37 @@ For example, if there , sub-domain
 
 ![Elastic][3]
 
-This approach can inadvertantly lead to [nanoservices](###nanoservices).
+This approach can inadvertantly lead to [nanoservices](#nanoservices).
 
 ### Team Segregation
 
-This requirement might manifest from purely team organization, a different department or cost center, or even a 3rd party.
+Different teams may own specific microservices.
+- Cost distribution and/or internal service divisions
+- Code management
+- 3rd party development
+
+This can possibly lead to a multi-language microservices architecture.
 
 ![Elatic][4]
 
 ### Migration
 
-Gradual migration from a legacy application to a microservices architecture might be implemented, where new services are created in isolation, while existing services can be gradually migrated to the platform.
+Gradual migration from a legacy application to a microservices architecture might be implemented, where new services are created in isolation, while existing services can be gradually migrated to the new platform.
 
 ![Elatic][5]
 
 ### Nanoservices
 
-In smaller projects where decision to implement microservices, either in
+Often in smaller projects that implement microservices, some or even all services are slipt into their respective domains, but the amount of code and functions are quite possibly not enough to justify the inherent complexity.
+
+In one particular project that I consulted for, the architecture was almost a single function in each pod.
+
+![Elatic][9]
 
 ### "One App" Microservice
 
 This is simply an single application that is 
+
 
 
 [1]: assets/load.png
@@ -97,3 +118,5 @@ This is simply an single application that is
 [5]: assets/migration.png
 [6]: assets/tech.png
 [7]: assets/language.png
+[8]: assets/config.png
+[9]: assets/nano.png
