@@ -81,8 +81,6 @@ The hard part if figuring out your system, or you company, definition of domain,
 
 ![Domains][3]
 
-This approach can inadvertently lead to [nanoservices](#nanoservices).
-
 ### 7 - Team Segregation
 
 Different teams may own specific microservices.
