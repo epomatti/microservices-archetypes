@@ -59,7 +59,7 @@ A company or team may implement multiple languages. That might happen by design 
 
 ![Multi-Language][7]
 
-Architectures _can_ use different languages for their microservices, but that will come with a cost. Often microservices will evolve and generate complex core libraries and CI/CD templates that would require significant effort for migration. Teams should consider this approach carefully. This could inevitably lead to [technical microservices](#technical-microservices).
+Architectures _can_ use different languages for their microservices, but that will come with a cost. Often microservices will evolve and generate complex core libraries and CI/CD templates that would require significant effort for migration. Teams should consider this approach carefully.
 
 
 ### 5 - Technical Microservices
