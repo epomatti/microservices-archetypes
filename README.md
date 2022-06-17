@@ -20,7 +20,7 @@ This project documents the different types of microservices archetypes and scena
 When a particular service has unique capacity or operational requirements, engineers might choose to implement service isolation. Such decision can be driven by multiple reasons:
 
 - **Business criticality** - A business might be severely impacted with issues in such service. This could be a main service that is a direct dependency for the purchase of services and goods by customers, or even compliance related, where government or institutions may fine the company if the operation doesn't meet contract targets.
-- **Performance** - When resource consumption requirements re high nature in (operations require high memory, CPU, throughput, etc).
+- **Performance** - When resource consumption requirements are high nature in (operations require high memory, CPU, throughput, etc).
 - **Volume** - The service receives a distinctively high number of transactions or tasks to be completed, either constantly or during peak events.
 
 ![Service-specific][1]
@@ -49,7 +49,7 @@ You may have your LoB applications with a standard template, and eventually requ
 ![Technology Requirement][6]
 
 
-### 4 - Multi-language
+### 4 - Multiple Programming Languages
 
 A company or team may implement multiple languages. That might happen by design or by outer forces, such as a particular demand for professionals.
 
