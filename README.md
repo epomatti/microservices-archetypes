@@ -31,7 +31,7 @@ A system might have only a few critical services and can consider this approach.
 
 Typically, all components are or should be designed to scale in a system, with specific scalability configuration being applied to individual services.
 
-This is a constant activity guided by observation and testing via APM techniques and maintained as the system evolves across development cycles.
+This is a constant activity guided by observation and testing via APM techniques and maintained as the system evolves across development cycles. You'll have to inevitably deal with all of the added complexity such as distributed transactions and all of it.
 
 This is the most standard microservices architecture.
 
