@@ -99,15 +99,22 @@ Gradual migration from a legacy application to a microservices architecture migh
 
 ### Nanoservices
 
-Often in smaller projects that implement microservices, some or even all services are slipt into their respective domains, but the amount of code and functions are quite possibly not enough to justify the inherent complexity.
+Often in smaller projects that implement microservices, but not exclusive to those, some or even all services are slipt into their respective domains, but the amount of code and operations are not enough to justify the inherent complexity.
+
+During the startup period a lot of "MVPs" were developed in such a way. Is the complexity justified by the possibility of exponential growth in the future?
 
 In one particular project that I consulted for, the architecture was almost a single function in each pod.
 
 ![Elatic][9]
 
-### "One App" Microservice
+### Extra: "One App" Microservice
 
-This is simply an single application that is 
+This is simply a single application deployed to any platform or container which is mistakenly called "microservice", but has none of the scalability and boundaries that one would expect. It's just an app.
+
+The first time a heard it was for a Java Spring application. Since they were different from Java EE in which you can port everything in a single file, that probably started the whole thing.
+
+![Elatic][10]
+
 
 
 
@@ -120,3 +127,4 @@ This is simply an single application that is
 [7]: assets/language.png
 [8]: assets/config.png
 [9]: assets/nano.png
+[10]: assets/app.png
