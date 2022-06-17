@@ -37,8 +37,11 @@ When there is a technical requirement that forces a service to be created using 
 
 - An SDK required for integration with a 3rd party is available in only a few languages
 - A software dependency that needs to run on a specific operating system
-- A performance requirement requirement that may require a specific technology
+- A performance requirement that may be achieved only or more easily by a specific technology
 
+You may have you LoB services with a standard template, and eventually require some of them to be built in different technologies.
+
+![Elastic][6]
 
 
 ### Language
@@ -91,3 +94,4 @@ This is simply an single application that is
 [3]: assets/domain.png
 [4]: assets/team.png
 [5]: assets/migration.png
+[6]: assets/tech.png
