@@ -44,14 +44,15 @@ You may have you LoB services with a standard template, and eventually require s
 ![Elastic][6]
 
 
-### Language
+### Multi-Language
 
-Either by design or , companies might use multiple language
+A company or team may implement multiple languages. That might happen by design or by outer forces, such as a particular demand for professionals.
 
-This might be a case of service dependency
+Architectures _can_ use use multiple languages for difference microservices, but that will come with a cost.
 
-You _can_ use use multiple languages for difference microservices, but that doesn't necessarily means that you _should_ do it.
+Often microservices will evolve and generate complex core libraries and CI/CD templates that would require significant effort for migration. Teams should consider this approach carefully.
 
+![Language][7]
 
 
 ### Technical Microservices
@@ -95,3 +96,4 @@ This is simply an single application that is
 [4]: assets/team.png
 [5]: assets/migration.png
 [6]: assets/tech.png
+[7]: assets/language.png
