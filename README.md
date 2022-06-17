@@ -17,7 +17,7 @@ This project documents the different types of microservices archetypes and scena
 
 ## Archetypes
 
-### Service-specific Scalability
+### 1 - Service-specific Scalability
 
 When a particular service has unique capacity or operational requirements, engineers might choose to implement service isolation. Such decision can be driven by multiple reasons:
 
@@ -27,7 +27,7 @@ When a particular service has unique capacity or operational requirements, engin
 
 ![Load oriented Microservices][1]
 
-### General Scalability
+### 2 - General Scalability
 
 Typically all components are or should be designed to scale in a system, with specific scalability configuration being applied to individual services.
 
@@ -38,7 +38,7 @@ This is a constant activity guided by observation and testing via APM techniques
 Large systems will scale this model to the extreme across multiple products and clusters to reach customers globally, often arriving in unique architectures with multiple layers of dependencies and abstractions, although that would not classify as "micro" services architecture by most definitions.
 
 
-### Technology Requirement 
+### 3 - Technology Requirement 
 
 When there is a technical requirement that forces a service to be created using a specific technology. Reasons may vary as to why this would be the case:
 
@@ -51,7 +51,7 @@ You may have you LoB services with a standard template, and eventually require s
 ![Elastic][6]
 
 
-### Multi-Language
+### 4 - Multi-Language
 
 A company or team may implement multiple languages. That might happen by design or by outer forces, such as a particular demand for professionals.
 
@@ -62,7 +62,7 @@ Architectures _can_ use use multiple languages for difference microservices, but
 Often microservices will evolve and generate complex core libraries and CI/CD templates that would require significant effort for migration. Teams should consider this approach carefully. This could inevitably lead to [technical microservices](#technical-microservices).
 
 
-### Technical Microservices
+### 5 - Technical Microservices
 
 Some requirements cannot be met with code dependencies and might need to be exported to their very own microservice for technical reasons.
 
@@ -72,7 +72,7 @@ Let's suppose that using [Azure App Configuration](https://azure.microsoft.com/e
 
 ![Language][8]
 
-### Domain
+### 6 - Domain
 
 This approach commonly is implicit to , but it is not always the case. You may which to (depending on what definition of "domain" is being used)
 
@@ -83,7 +83,7 @@ For example, if there , sub-domain
 
 This approach can inadvertantly lead to [nanoservices](#nanoservices).
 
-### Team Segregation
+### 7 - Team Segregation
 
 Different teams may own specific microservices.
 - Cost distribution and/or internal service divisions
@@ -94,13 +94,13 @@ This can possibly lead to a multi-language microservices architecture.
 
 ![Elatic][4]
 
-### Migration
+### 8 - Migration
 
 Gradual migration from a legacy application to a microservices architecture might be implemented, where new services are created in isolation, while existing services can be gradually migrated to the new platform.
 
 ![Elatic][5]
 
-### Nanoservices
+### 9 - Nanoservices
 
 Often in smaller projects that implement microservices, but not exclusive to those, some or even all services are slipt into their respective domains, but the amount of code and operations are not enough to justify the inherent complexity.
 
@@ -110,7 +110,7 @@ In one particular project that I consulted for, the architecture was almost a si
 
 ![Elatic][9]
 
-### Extra: "One App" Microservice
+### 10 - Extra: "One App" Microservice
 
 This is simply a single application deployed to any platform or container which is mistakenly called "microservice", but has none of the scalability and boundaries that one would expect. It's just an app.
 
