@@ -46,7 +46,7 @@ When there is a technical requirement that forces a service to be created using 
 - A software dependency that needs to run on a specific operating system
 - A performance requirement that may be achieved only or more easily by a specific technology
 
-You may have you LoB services with a standard template, and eventually require some of them to be built in different technologies.
+You may have your LoB applications with a standard template, and eventually require some of them to be built in different technologies.
 
 ![Elastic][6]
 
