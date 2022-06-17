@@ -12,30 +12,25 @@ Anyways, let's talk about archetypes.
 
 ## Archetypes
 
-### Service-specific scalability
+### Service-specific Scalability
 
-When a particular service has a inherit capacity demand, either by it's resource requirements in nature (such as, operations have high memory or cpu demands) or by volume (larger number of requests), it is fairly common t
+When a particular service has unique capacity or operational requirements, engineers might choose to implement service isolation. Such decision can be drive by multiple reasons:
 
-That doesn't mean
-
-An example would be two distinct services:
-- 
-
-asdf
+- **Business criticality** - Business operation or reputation is highly sensitive to the operation of such service. This could be a main service that a direct dependency for the purchase of services and goods by customers, or even compliance related, where govern or institutions may fine the company if the operation doesn't meet contract targets.
+- **Performance** - When resource consumption requirements re high nature in (operations require high memory, cpu, throughput, etc).
+- **Volume** - The service receives a distinctively high amount of transactions or tasks to be completed, either constantly or during peak events.
 
 ![Load oriented Microservices][1]
 
 ### General Scalability
 
-One may say, for instance, that a Contact service typically will 
-- Order Service - 
-- Contact Service - Where customers will 
+Typically all components are designed to scale in a cluster, with specific scalability configuration being applied to individual services.
 
-It is fair to say that the Order Service will, most of the time, receive. However, if experience service disruption in the Order Service or other component, Contact Service may be flooded with requests.
+This is a constant activity guided by observation and testing and maintained as the product evolves and changes during development cycles.
 
 ![Elastic][2]
 
-### Dependency 
+### Technology Dependency 
 fasdfasdf
 
 
