@@ -1,5 +1,7 @@
 # Sample
 
+You should have $GOPATH/bin in $PATH.
+
 Microservices platform sample using Micro:
 
   go install github.com/micro/micro/v3@latest
