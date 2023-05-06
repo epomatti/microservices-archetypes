@@ -34,7 +34,7 @@ func post(c *gin.Context) {
 		return
 	}
 
-	id, err := database.Create(request.Address, request.OrderId)
+	id, err := database.Create(request.Address, request.OrderID)
 	if err != nil {
 		log.Fatal(err)
 		c.JSON(http.StatusInternalServerError, gin.H{

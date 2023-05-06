@@ -2,5 +2,5 @@ package api
 
 type DeliveryRequestBody struct {
 	Address string
-	OrderId string
+	OrderID uint `json:"orderId"`
 }
