@@ -4,6 +4,7 @@ import (
 	"deliveries/database"
 	"log"
 	"net/http"
+	"strconv"
 
 	"github.com/gin-gonic/gin"
 )
@@ -17,8 +18,20 @@ func ping(c *gin.Context) {
 
 // Get will find a delivery
 func get(c *gin.Context) {
-	id := c.Param("id")
-	c.String(http.StatusOK, "Hello %s", id)
+	str := c.Param("id")
+	id, err := strconv.Atoi(str)
+	if err != nil {
+		handleError(c, err)
+		return
+	}
+
+	d, err := database.FindById(uint(id))
+	if err != nil {
+		handleError(c, err)
+		return
+	}
+
+	c.JSON(http.StatusOK, d)
 }
 
 // Post will create a delivery
@@ -46,5 +59,4 @@ func post(c *gin.Context) {
 	c.JSON(http.StatusCreated, gin.H{
 		"Delivery created": id,
 	})
-
 }
