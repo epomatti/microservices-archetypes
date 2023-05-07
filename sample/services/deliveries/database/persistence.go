@@ -1,12 +1,12 @@
 package database
 
 // Create will insert a new delivery
-func Create(address string, orderID uint) (id uint, err error) {
+func Create(address string, orderID uint) (Delivery, error) {
 	delivery := Delivery{
 		Address: address,
 		OrderID: orderID,
 	}
-	return delivery.ID, db.Create(&delivery).Error
+	return delivery, db.Create(&delivery).Error
 }
 
 // FindbyId will select a delivery by it's primary key

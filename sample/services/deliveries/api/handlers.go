@@ -2,7 +2,6 @@ package api
 
 import (
 	"deliveries/database"
-	"log"
 	"net/http"
 	"strconv"
 
@@ -40,19 +39,13 @@ func post(c *gin.Context) {
 	var request DeliveryRequestBody
 
 	if err := c.BindJSON(&request); err != nil {
-		log.Fatal(err)
-		c.JSON(http.StatusInternalServerError, gin.H{
-			"Error": "Unexpected",
-		})
+		handleError(c, err)
 		return
 	}
 
 	id, err := database.Create(request.Address, request.OrderID)
 	if err != nil {
-		log.Fatal(err)
-		c.JSON(http.StatusInternalServerError, gin.H{
-			"Error": "Unexpected",
-		})
+		handleError(c, err)
 		return
 	}
 
