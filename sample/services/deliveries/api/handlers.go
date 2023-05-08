@@ -9,10 +9,8 @@ import (
 )
 
 // Ping is a small service check
-func ping(c *gin.Context) {
-	c.JSON(http.StatusOK, gin.H{
-		"message": "pong",
-	})
+func healthCheck(c *gin.Context) {
+	c.String(http.StatusOK, "OK")
 }
 
 // Get will find a delivery
